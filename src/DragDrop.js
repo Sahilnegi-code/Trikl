@@ -40,7 +40,7 @@ useEffect( ()=>{
                 onChange={(e) => {
                     setVal(e.target.value);
                 }}
-    style={{ overflowY:'hidden',color:'white', fontSize:'40px' ,background:'transparent', outline:'none', width:'300px' , height:'100px', borderBottom:'grey'}}
+    style={{ overflowY:'hidden',color:'white', fontSize:'40px' ,background:'transparent', outline:'none',  borderBottom:'grey'}}
             />  
             </div>
     
