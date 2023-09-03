@@ -29,7 +29,7 @@ useEffect( ()=>{
       grid={[100, 20]}
       handle= ".handle"
       position={null}
-      scale={1}
+      scale={4}
 
       >
         
@@ -40,7 +40,7 @@ useEffect( ()=>{
                 onChange={(e) => {
                     setVal(e.target.value);
                 }}
-    style={{ overflowY:'hidden',color:'white', fontSize:'40px' ,background:'transparent', outline:'none',  borderBottom:'grey'}}
+    style={{ color:'white', fontSize:'40px' ,background:'transparent', outline:'none',  borderBottom:'grey'}}
             />  
             </div>
     
