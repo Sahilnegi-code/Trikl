@@ -5,10 +5,8 @@ const FoodComponent = ({item, setItem,setSelectItem,selectItem,data   }) => {
     const [selectedFilters, setSelectedFilters] = useState([]);
     const [filteredItems, setFilteredItems] = useState([]);
 
-// console.log(selectItem);
-    // console.log(data);
     const handleFilterButtonClick = (selectedCategory) => {
-      // console.log(selectedCategory)
+    
         if (selectedFilters.includes(selectedCategory)) {
           let filters = selectedFilters.filter((el) => el !== selectedCategory);
           setSelectedFilters(filters);
@@ -30,7 +28,7 @@ const FoodComponent = ({item, setItem,setSelectItem,selectItem,data   }) => {
             //  console.log(val, "hello");
              return val;
             });
-// console.log(tempItems)
+
             setFilteredItems(tempItems.flat());
           } 
           else{

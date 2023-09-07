@@ -5,21 +5,7 @@ export default function ({setSelectItem,item, selectItem }){
   return (
     <>
 <div>
-    {/* { console.log(item["Passenger-1"])} */}
- {item && item["Passenger1"] && item["Passenger1"].map((curr, index) => (
-        <React.Fragment key={index}>
-        
-         <div style={{display:'flex'}}>
-            <div>
-                {  curr.title}
-            </div>
-            <div>
-                {  curr.price}
-            </div>
-        </div>    
-        </React.Fragment>
-        ))}
-
+    
         
 </div>
 
@@ -47,20 +33,20 @@ export default function ({setSelectItem,item, selectItem }){
     <div id="" className="collapse collapseOne" >
       <div className="card-body" >
            
-      {item["Passenger1"] && item["Passenger1"].map((curr =>
-        <>
-
+      {item && item["Passenger1"] && item["Passenger1"].map((curr, index) => (
+        <React.Fragment key={index}>
+        
          <div style={{display:'flex'}}>
-            <div>
+            <div style={{width:'50%'}}>
+              
                 {  curr.title}
             </div>
-            <div>
-                {  curr.price}
+            <div style={{width:'50%' ,textAlign:'right'}}>
+              {""}  {  curr.price}
             </div>
         </div>    
-        </>
+        </React.Fragment>
         ))}
-
            
       </div>
     </div>
@@ -77,7 +63,21 @@ export default function ({setSelectItem,item, selectItem }){
 
     <div id="" className="collapse collapseTwo" >
       <div className="card-body">
-        Passenger 2
+      {item && item["Passenger2"] && item["Passenger2"].map((curr, index) => (
+        <React.Fragment key={index}>
+        
+         <div style={{display:'flex'}}>
+            <div style={{width:'50%'}}>
+              
+                {  curr.title}
+            </div>
+            <div style={{width:'50%' ,textAlign:'right'}}>
+              {""}  {  curr.price}
+            </div>
+        </div>    
+        </React.Fragment>
+        ))}
+
       </div>
     </div>
   </div>

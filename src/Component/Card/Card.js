@@ -7,7 +7,7 @@ const Card = ({curr,  selectItem , setSelectItem , setItem ,item }) => {
 const handleItem = async(obj)=>{
   if(selectItem === "") return;
 
-let passenger = item;
+let passenger = {...item};
 let arr = [];
 if(Object.keys(passenger).length === 0){
   arr.push(obj);
